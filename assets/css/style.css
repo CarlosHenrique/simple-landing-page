@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+/* Initials configurations */
+
+:root{
+    --pink: hsl(322,100%,66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0,100%,63%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 1280px;
+    min-width: 375px;
+    font-family: 'Open Sans','Sans-serif';
+}
+header, section{
+    padding: 3rem 4rem;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+   
+    color: var(--very-dark-cyan);
+}
+
+h2{
+    font-size: 2.5rem;
+}
+h1{
+    font-size: 4rem;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem;
+    color: var(--very-dark-cyan);
+}
+
+button{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
+}
+
+/* Header - LOGO AND BUTTON */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.logo{
+    height: 2.2rem;
+    width: auto;
+    cursor: pointer;
+}
+
+.header-button{
+    border-radius: 20px;
+    border: 1px solid hsl(321, 100%, 78%);
+    background: white;
+    color:  hsl(321, 100%, 78%);
+    padding: 0.4rem 1rem;
+    box-shadow: 0 0 0.2em hsl(321, 100%, 78%);
+    
+}
+
+
+/* Sections */
+
+/*Section-one*/
+section{
+    height: 70%;
+    width: 100%;
+    padding: 3rem 4rem;
+}
+
+.section-one {
+    display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+   padding: 4rem;
+   
+}
+
+.p-content{
+    height: 10%;
+    width: 55%;
+}
+.p-content p{
+    text-align: justify;
+    text-align-last: center;
+}
+
+.section-button{
+    margin: 2rem 2rem;
+    width: 35%;
+    height: 3rem;
+    border-radius: 25px;
+    background: hsl(322, 100%, 66%);
+    color: white;
+    font-family:"Open-sans", sans-serif; 
+    font-weight: 600;
+    box-shadow: 0 0 0.2em hsl(0, 2%, 41%);
+}
+.section-button:hover{
+    background: var(--light-pink);
+    box-shadow: none;
+}
+
+.image-page{
+    margin-top: 3rem;
+    width: 85%;
+}
+
+.infos-content{
+    padding: 6rem;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infos-content img{
+    height: 2rem;
+    width: auto;
+}
+.infos-content .communities-content h1,p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infos-content .messages-content h1,p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section-two */
+
+.section-two{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.section-two img{
+    width: 40%;
+    height: auto;
+}
+
+.section-two .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+}
+
+.section-two .text-content{
+    width: 50%;
+}
+
+.container .text-content p{
+    margin-top: 1rem;
+    text-align: justify;
+    width: 102%;
+   
+}
+
+/* Section-three */
+
+.section-three{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+
+footer{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-start;
+    background: hsl(192, 47%, 55%);
+    color: white;
+    padding: 5rem;
+}
+
+footer p{
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+
+
+footer .info-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    margin: 1rem;
+    margin-top: 5.8%;
+}
+footer .info-section p,h3{
+    color: white;
+}
+footer .newsletter-section p,h3{
+    color: white;
+}
+
+.info-section .lorem{
+    margin-top: 0.8rem;
+    width: 70%;
+}
+
+.phone-content, .email-content{
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-content img, .email-content img{
+    width: auto;
+    height: 0.9rem;
+    margin-right: 0.8rem;
+}
+.icons-content{
+    margin-top: 12%;
+}
+
+#instagram, #facebook, #twitter{
+    cursor: pointer;
+    height: 2.5rem;
+    width:2.5rem;
+    fill: white;
+}
+
+#instagram:hover{
+    fill: hsl(326, 57%, 48%);
+}
+#facebook:hover{
+    fill: #3b5998;
+}
+
+#twitter:hover{
+    fill:#00acee;
+}
+
+
+
+
+footer .newsletter-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+   
+}
+
+footer .newsletter-section p{
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; 
+}
+
+.input-content{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+input{
+    width: 14rem;
+    height: 2rem;
+    border: 0.1px black solid;
+    border-radius: 4px;
+}
+
+.subscribe-button:hover{
+    background: var(--light-pink);
+    box-shadow: none;
+}
+
+.subscribe-button{
+    border-radius: 4px;
+    height:2rem;
+    width: 6rem;
+    border: none;
+    background: hsl(322, 100%, 66%);
+    color: white;
+    font-family:"Open-sans", sans-serif; 
+    font-weight: 600;
+    margin-left: 1.5rem;
+}
