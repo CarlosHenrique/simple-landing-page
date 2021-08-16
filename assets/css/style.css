@@ -179,6 +179,7 @@ section{
     height: 80vh;
 }
 
+
 .section-two .text-content{
     width: 50%;
 }
@@ -209,9 +210,18 @@ footer{
     flex-direction: row;
     justify-content:center;
     align-items: flex-start;
-    background: hsl(192, 47%, 55%);
+    background: var(--very-dark-cyan);
+    
     color: white;
     padding: 5rem;
+
+}
+#top-content{
+    background-image: url(/assets/images/bg-footer-top-desktop.svg);
+    background-size: 100% auto ;
+    background-repeat: no-repeat;
+    height: 22vh;
+    width: 100vw;
 }
 
 footer p{
@@ -230,6 +240,16 @@ footer .info-section{
     margin: 1rem;
     margin-top: 5.8%;
 }
+
+.info-section .logo-content{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    width: 20vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
 footer .info-section p,h3{
     color: white;
 }
