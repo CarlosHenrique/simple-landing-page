@@ -96,6 +96,7 @@ header {
 .sections-content{
     min-height: 60vh;
     max-height: 80vh;
+    
  
 }
 .main-content h2,.main-content h1,.main-content p{
@@ -158,11 +159,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10rem;
 }
 
 .infos-content img{
     height: 2rem;
     width: auto;
+   
 }
 .infos-content .communities-content h1,p{
     display: flex;
@@ -182,8 +185,9 @@ header {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: var(--gap);
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
 }
 .reverse{
     grid-template-columns: 1fr 1.5fr;
@@ -195,6 +199,78 @@ header {
     padding: var(--gap);
 }
 
+#grow-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    position: relative;
+    margin-top: var(--gap);
+    margin-bottom: var(--gap);
+}
+
+#users-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    position: relative;
+    margin-top: var(--gap);
+    margin-bottom: var(--gap);
+}
+
+#flow-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--gap);
+    margin-bottom: var(--gap);
+}
+
+#grow-section .top-content{
+    background-image: url(/assets/images/bg-section-top-desktop-1.svg);
+    background-size: 100% 8.5rem ;
+    background-repeat: no-repeat;
+    height: 8.5rem;
+    width: 100%;
+    position: absolute;
+    z-index: 1313;
+    bottom: 100%;
+}
+#grow-section .bottom-content{
+    background-image: url(/assets/images/bg-section-bottom-desktop-1.svg);
+    background-size: 100% 8.5rem ;
+    background-repeat: no-repeat;
+    height: 8.5rem;
+    width: 100%;
+    position: absolute;
+    z-index: 1313;
+    top: 100%;
+}
+
+#users-section .top-content{
+    background-image: url(/assets/images/bg-section-top-desktop-2.svg);
+    background-size: 100% 8.5rem ;
+    background-repeat: no-repeat;
+    height: 8.5rem;
+    width: 100%;
+    position: absolute;
+    z-index: 1313;
+    bottom: 100%;
+}
+#users-section .bottom-content{
+    background-image: url(/assets/images/bg-section-bottom-desktop-2.svg);
+    background-size: 100% 8.5rem ;
+    background-repeat: no-repeat;
+    height: 8.5rem;
+    width: 100%;
+    position: absolute;
+    z-index: 1313;
+    top: 100%;
+}
 
 
 .grid .text-content{
