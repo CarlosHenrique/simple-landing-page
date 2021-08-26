@@ -187,17 +187,25 @@ header {
     gap: var(--gap);
     justify-content: center;
     align-items: center;
-    
+    height: 100vh;
 }
+
+.intro-text-content,
+.intro-img-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.img-content img {
+  max-width: 100%;
+  height: auto;
+}
+
 .reverse{
     grid-template-columns: 1fr 1.5fr;
 }
 
-.grid img{
-    height: 40%;
-    width: auto;
-    padding: var(--gap);
-}
 
 #grow-section{
     display: flex;
@@ -226,8 +234,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: var(--gap);
-    margin-bottom: var(--gap);
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 #grow-section .top-content{
@@ -273,7 +281,7 @@ header {
 }
 
 
-.grid .text-content{
+.grid .text-content, .grid .img-content{
     padding: var(--gap);
 }
 
@@ -403,15 +411,150 @@ input{
 
 
 
+
+@media screen and (min-width: 320px) and (max-width: 900px){
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    h1{
+        font-size: 3rem;
+    }
+    
+    p{
+       
+        font-size:0.9rem;
+    }
+
+    .infos-content{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .text-content{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .img-content{
+        margin-left: 20%;
+        max-width: 60%; 
+        margin-bottom: 20%;
+    }
+     
+    #flow-section .reverse{
+      flex-direction: column-reverse;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #flow-section .reverse .img-content{
+        margin-left: 0;
+    }
+
+    #grow-section .top-content{
+        background-image: url(/assets/images/bg-section-top-mobile-1.svg);
+        
+    }
+    #grow-section .bottom-content{
+        background-image: url(/assets/images/bg-section-bottom-mobile-1.svg);
+        
+    }
+    
+    #users-section .top-content{
+        background-image: url(/assets/images/bg-section-top-mobile-2.svg);
+        
+    }
+    #users-section .bottom-content{
+        background-image: url(/assets/images/bg-section-bottom-mobile-2.svg);
+    }
+
+    #footer-top-content{
+        background-image: url(/assets/images/bg-footer-top-mobile.svg);
+    }
+
+    footer{
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: center;
+       align-items: center;
+       height: 70vh;
+       position: relative;
+    }
+
+    .info-section{
+        position: static;
+    }
+
+    .icons-content{
+
+        position: absolute;
+        bottom: 6%;
+    }
+
+    .input-content{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    input{
+        height: 2.5rem;
+        width: 100%;
+    }
+
+    .subscribe-button{
+        height:2.5rem;
+        width: 30%;
+        position: absolute;
+        left: 66%;
+        top: 140%;
+    }
+
+}
+
 /* Mobile S*/
-@media screen and (min-width:320px) and (max-width: 374px){}
+@media screen and (min-width:320px) and (max-width: 374px){
+   
+}
+
 /* Mobile M */
-@media screen and (min-width: 375px) and (max-width:432px){}
+@media screen and (min-width: 375px) and (max-width:432px){
+  
+}
 
 /* Mobile L */
-@media screen and (min-width: 425px) and (max-width: 768px) {}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+   
+}
 
-@media screen and (min-width: 768px) and (max-width:1024px){}
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+   
+}
 
 /* Laptop */
-@media screen and (min-width: 1025px) and (max-width: 1200px){}
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    h2{
+        font-size: 2rem;
+    }
+    
+    h1{
+        font-size: 3rem;
+    }
+    
+    p{
+       
+        font-size:1rem;
+    }
+
+}
